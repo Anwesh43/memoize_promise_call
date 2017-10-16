@@ -9,7 +9,7 @@
 ### Usage
 
 ```
-    const memoizePromise = require('memoize_promise_call')
+    const memoizePromise = require('memoize_promise_call').memoizePromise
 
     fetch = memoziePromise(fetch)
 
@@ -18,7 +18,7 @@
     })
 
     // 2nd time it won't make the request simply give you the response
-    
+
     fetch('https://www.example.org').then((res)=>res.json()).then((data)=>{
         //Do something here
     })s
